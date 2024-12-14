@@ -4,6 +4,8 @@ Overview
 
 TCG CSS MTK is a modding toolkit for TCG Card Shop Simulator. Currently, the only tool is the Mod Editor, but more tools will be added in the future.
 
+
+
 Current Features
 
 Basic UI: Though visually simplistic, the program provides navigation for:
@@ -26,6 +28,8 @@ Fetches item attributes (e.g., texture, icon, name).
 
 Auto-scaling (Experimental): Optionally scales .obj files based on reference models (requires game files).
 
+
+
 Requirements
 
 Python 3.x
@@ -37,6 +41,8 @@ tkinter
 Pillow
 
 sqlite3
+
+
 
 Installation
 
@@ -55,13 +61,15 @@ Install dependencies:
 
 pip install -r requirements.txt
 
+
+
 Usage
 
 Ensure your mod files and database (demo.db) are placed in the appropriate subfolders:
 
 Database/ for the SQLite database.
 
-Game Exports/ for reference models or textures.
+Game Exports/ for exported game files (Insert Nexus Link).
 
 Output/ for processed files.
 
@@ -76,6 +84,8 @@ Select mod files.
 Preview and modify meshes, textures, icons, and names.
 
 Apply experimental auto-scaling to .obj files (requires game files).
+
+
 
 Known Limitations
 
