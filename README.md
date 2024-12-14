@@ -1,30 +1,86 @@
-This project is still in early development
+TCG CSS MTK
 
-Please keep the following in mind:
+Overview
 
-1) Some features will require the user to provide game files.  Details can be
-   found in the manual.
+TCG CSS MTK is a modding toolkit for TCG Card Shop Simulator. Currently, the only tool is the Mod Editor, but more tools will be added in the future.
 
-2) The UI is disgusting.  It is temporary and mainly for testing purposes.  It is
-   usable in it's current state, but will be replaced with a cleaner UI in the future.
+Current Features
 
-3) The current feature list is short.  But will be expanding as quickly as possible.
+Basic UI: Though visually simplistic, the program provides navigation for:
 
-4) I am still learning python and have been using chatgpt to aid in my journey.
-   Most of it's use has been asking questions, but some of the code was written
-   by chatgpt.  This means between me still learning and AI being far from perfect,
-   the code is probably pretty inefficient, and the comments and formatting are all
-   over the place.  I hope to remedy these issues as I improve with python and rely
-   less on AI.
+Selecting and managing figurines, plushies, and comic book mods.
 
-Current feature list:
+Editing mod meshes, textures, icons, and names.
 
-Figurines
-- Edit a mod to change which in game item it replaces
-- Shows a preview of the selected game item (Requires game files)
-- Automatically rescale mod to match the size of the newly effected game item
-  (Requires game files)
+Basic database queries for matching items.
 
-Comics
-- Edit a mod to change which comic volume it replaces
-          
+Copies original mod files: All edits and changes are made to the copies, leaving the original mod files unaltered.
+
+File Organization: Automatically organizes the new mod files into structured folders for easier management.
+
+Database Integration:
+
+Connects to an SQLite database (e.g., demo.db in the Database/ folder).
+
+Fetches item attributes (e.g., texture, icon, name).
+
+Auto-scaling (Experimental): Optionally scales .obj files based on reference models (requires game files).
+
+Requirements
+
+Python 3.x
+
+Required dependencies (install via pip install -r requirements.txt):
+
+tkinter
+
+Pillow
+
+sqlite3
+
+Installation
+
+For the compiled "just download and run" version:
+Insert Nexus Link
+
+Clone the repository:
+
+git clone https://github.com/your-username/TCG-CSS-MTK.git
+
+Navigate to the project directory:
+
+cd TCG-CSS-MTK
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Usage
+
+Ensure your mod files and database (demo.db) are placed in the appropriate subfolders:
+
+Database/ for the SQLite database.
+
+Game Exports/ for reference models or textures.
+
+Output/ for processed files.
+
+Run the program:
+
+python Main.py
+
+Follow the on-screen instructions to:
+
+Select mod files.
+
+Preview and modify meshes, textures, icons, and names.
+
+Apply experimental auto-scaling to .obj files (requires game files).
+
+Known Limitations
+
+The user interface (UI) is functional but lacks polish.
+
+Code efficiency and optimization are works in progress.
+
+Limited feature set (more features and tools coming soon!)
